@@ -1,0 +1,171 @@
+
+
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f5f5f5;
+    
+    
+    background-image: url('imgs/4.webp'); /* Remplacez 'chemin/vers/votre/image.jpg' par le chemin de votre image */
+    background-size: cover; /* Ajustez la taille de l'image pour couvrir tout l'arrière-plan */
+    background-position: center; /* Centrez l'image sur l'arrière-plan */
+    background-attachment: fixed; /* Fixer la position de l'image de fond */
+      
+      
+      
+      
+  }
+  header {
+    display: flex;
+    align-items: center;
+  }
+  
+  
+  #result {
+    color: white; /* Changez la couleur du texte en blanc */
+  }
+  
+  #addModule,
+#calculateAverage {
+  padding: 15px 30px; /* Ajustez le rembourrage pour agrandir les boutons */
+  font-size: 16px; /* Ajustez la taille de la police si nécessaire */
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 0 10px;
+}
+
+#buttons-container {
+    display: flex; /* Utiliser Flexbox */
+    justify-content: center; /* Centrer les boutons horizontalement */
+    margin-top: 20px; /* Ajoutez un espace au-dessus des boutons si nécessaire */
+  }
+  
+.module-colors {
+    background-color: #db4646; /* Couleur par défaut */
+  }
+  
+  .module-colors:nth-child(2) {
+    background-color: #105010; /* Couleur pour le deuxième module */
+  }
+  
+  .module-colors:nth-child(3) {
+    background-color: #4949bd; /* Couleur pour le troisième module */
+  }
+  
+  /* Ajoutez plus de règles de couleur selon le nombre de modules que vous prévoyez */
+  #modules {
+    display: flex; /* Utiliser Flexbox pour aligner les modules horizontalement */
+    flex-wrap: wrap; /* Permettre le retour à la ligne des modules si nécessaire */
+  }
+  
+  .module {
+    flex: 0 0 calc(33.33% - 20px); /* Répartir l'espace pour chaque module, ajustez si nécessaire */
+    margin: 10px; /* Espacement entre les modules */
+  }
+  
+  #addModule,
+  #calculateAverage {
+    padding: 10px 20px;
+    background-color: #378f3a;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 0 10px; /* Ajoutez un espace horizontal entre les boutons si nécessaire */
+  }
+  
+  #addModule:hover,
+  #calculateAverage:hover {
+    background-color: #378f3a;
+  }
+  
+  
+  .logo-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo-container img {
+    width: 100px; /* Ajustez la taille de votre logo */
+    height: 100px; /* Assurez-vous que la hauteur est égale à la largeur */
+    margin-right: 20px;
+    border-radius: 100%; /* Appliquer une bordure arrondie pour créer un cercle */
+    overflow: hidden; /* Assurer que l'image est entièrement visible à l'intérieur du cercle */
+  }
+  
+  h1 {
+    margin: 0;
+  }
+  
+  
+  
+  
+  
+  h1 {
+    text-align: center;
+    color: #ffffff;
+  }
+  
+  #modules {
+    margin-bottom: 20px;
+  }
+  
+  .module {
+    margin-bottom: 20px;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .module input[type="text"],
+  .module input[type="number"] {
+    width: calc(100% - 22px); /* Réduire la largeur et prendre en compte le padding */
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  .module-courses {
+    margin-top: 10px;
+  }
+  
+  .course {
+    margin-bottom: 10px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #378f3a;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #378f3a;
+  }
+  
+  #result {
+    text-align: center;
+    font-size: 1.2em;
+    margin-top: 20px;
+  }
+  
+  /* Media queries pour les téléphones */
+  @media screen and (max-width: 600px) {
+    .module input[type="text"],
+    .module input[type="number"] {
+      width: calc(100% - 16px); /* Réduire la largeur et prendre en compte le padding */
+      padding: 6px;
+    }
+  }
+  
